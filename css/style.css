@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
+
+/* Set custom variables here */
+
+:root {
+  --primary: #2e483a;
+}
+
+.navbar {
+  background-color: var(--primary);
+}
+
+body {
+  font-family: "Sarala", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+
+}
+
+#hero {
+  height: 800px;
+  background-color: #E4E6DB;
+  background-image: url(../images/hero-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+}
+
+#hero h1 {
+margin-left: 70pt;
+margin-right: 70pt;
+}
+
+#hero p {
+  margin-left: 110pt;
+  margin-right: 110pt;
+}
+
+.btn {
+  background-color: var(--primary);
+}
+
+#hero .d-flex {
+  height: 800px;
+}
+
+.HIW {
+  text-align: center;
+  margin-left: 110pt;
+  margin-right: 110pt;
+}
+
+#smart {
+  text-align: center;
+}
+
+#smart h1 {
+  margin: 20pt;
+}
+#smart p {
+  margin: 20pt;
+}
+#reviews {
+  text-align: center;
+  background-color: var(--primary);
+}
+
+#reviews img {
+  margin: 20pt;
+}
+
+#reviews p {
+  margin-left: 80pt;
+  margin-right: 80pt;
+}
+
+#reviews figcaption {
+  font-size: 9pt;
+}
+
+#accord {
+  margin: 40pt;
+}
+#cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#cta .d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+#cta h2 {
+  margin-top: 200pt;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.foot {
+  background-color: var(--primary);
+  height: 75pt;
+}
+
+.logo {
+  float: left;
+  list-style: none;
+}
+
+.inst {
+  float: right;
+  list-style: none;
+}
+
+.face {
+  float: right;
+  list-style: none;
+}
+
+section:not(#hero):not(#cta){
+  padding: 60px 0;
+}
+
+@media(min-width: 993px){
+  section:not(#hero):not(#cta){
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: 993px) {
+  header ul {
+    display: flex;
+    margin-left: 520px;
+  }
+}
